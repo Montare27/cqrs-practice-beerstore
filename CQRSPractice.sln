@@ -1,12 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSPractice.Presentation", "CQRSPractice.Presentation\CQRSPractice.Presentation.csproj", "{74E9939C-77A5-4212-AC02-3FA2E54543B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation", "Presentation\Presentation.csproj", "{74E9939C-77A5-4212-AC02-3FA2E54543B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSPractice.Domain", "CQRSPractice.Domain\CQRSPractice.Domain.csproj", "{98B2A5BC-F25F-4EE6-954E-6ABF145E216A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{98B2A5BC-F25F-4EE6-954E-6ABF145E216A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSPractice.Application", "CQRSPractice.Application\CQRSPractice.Application.csproj", "{B33018A7-CA7E-4DCE-B4D1-0180B96719F9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{B33018A7-CA7E-4DCE-B4D1-0180B96719F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSPractice.Infrastructure", "CQRSPractice.Infrastructure\CQRSPractice.Infrastructure.csproj", "{AA40038A-E613-4AEE-ADCA-56450B7C3BBF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{AA40038A-E613-4AEE-ADCA-56450B7C3BBF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
