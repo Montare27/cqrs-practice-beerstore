@@ -1,0 +1,9 @@
+﻿/CQRSPractice.Presentation/bin
+/CQRSPractice.Presentation/obj
+/CQRSPractice.Application/bin
+/CQRSPractice.Application/obj
+/CQRSPractice.Domain/bin
+/CQRSPractice.Domain/obj
+/CQRSPractice.Infrastructure/obj
+/CQRSPractice.Infrastructure/bin
+/.idea
