@@ -24,7 +24,7 @@
             var beer = await _db.Beers.FirstOrDefaultAsync(x => x.Id == request.Id, cancellationToken);
             if (beer != null)
             {
-                beer = _mapper.Map<Beer>(request);
+                _db.Beers.Entry(beer).CurrentValues.SetValues(_mapper.Map<Beer>(request));
                 await _db.SaveChangesAsync(cancellationToken);
             }
 

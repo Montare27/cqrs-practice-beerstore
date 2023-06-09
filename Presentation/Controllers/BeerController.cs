@@ -9,7 +9,7 @@ using Application.Beer.Queries.GetBeerList;
 using MediatR;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]/")]
 public class BeerController : ControllerBase
 {
     private readonly IMediator _mediator;
@@ -40,11 +40,11 @@ public class BeerController : ControllerBase
         return Ok(id);
     }
 
-    [HttpPut("UpdateBeer/{id:Guid}")]
+    [HttpPut("UpdateBeer")]
     public async Task<ActionResult> UpdateBeer([FromBody] UpdateBeerCommand updateBeerCommand)
     {
-        var id = await _mediator.Send(updateBeerCommand);
-        return Ok(id);
+        await _mediator.Send(updateBeerCommand);
+        return Ok();
     }
 
     [HttpDelete("DeleteBeer/{id:Guid}")]
