@@ -16,9 +16,9 @@
             _mapper = mapper;
         }
 
-        public async Task<List<GetBeerDto>> Handle(GetBeerQuery request, CancellationToken cancellationToken)
+        public Task<List<GetBeerDto>> Handle(GetBeerQuery request, CancellationToken cancellationToken)
         {
-            return _mapper.Map<List<GetBeerDto>>(_db.Beers);
+            return Task.FromResult(_mapper.Map<List<GetBeerDto>>(_db.Beers));
         }
     }
 }

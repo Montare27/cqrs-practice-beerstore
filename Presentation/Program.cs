@@ -1,6 +1,9 @@
 using Application;
+using Application.Common;
+using Application.Interfaces;
 using Infrastructure;
 using MediatR;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 

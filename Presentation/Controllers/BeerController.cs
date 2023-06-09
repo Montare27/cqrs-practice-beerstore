@@ -1,10 +1,9 @@
-using Microsoft.AspNetCore.Mvc;
-
 namespace Presentation.Controllers;
 
+using Microsoft.AspNetCore.Mvc;
 using Application.Beer.Commands.CreateBeer;
 using Application.Beer.Commands.DeleteBeer;
-using Application.Beer.Commands.UpdateBeet;
+using Application.Beer.Commands.UpdateBeer;
 using Application.Beer.Queries.GetBeerDetails;
 using Application.Beer.Queries.GetBeerList;
 using MediatR;
@@ -44,8 +43,8 @@ public class BeerController : ControllerBase
     [HttpPut("UpdateBeer/{id:Guid}")]
     public async Task<ActionResult> UpdateBeer([FromBody] UpdateBeerCommand updateBeerCommand)
     {
-        await _mediator.Send(updateBeerCommand);
-        return Ok();
+        var id = await _mediator.Send(updateBeerCommand);
+        return Ok(id);
     }
 
     [HttpDelete("DeleteBeer/{id:Guid}")]
